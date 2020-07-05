@@ -73,7 +73,9 @@ body {
 }
 
 .address-header-link:hover,
-.address-header-link:focus {
+.address-header-link:focus,
+.navigation-list-link:hover,
+.navigation-list-link:focus {
   color: var(--accent);
 }
 /* ЗАГОЛОВОК */
@@ -106,6 +108,10 @@ body {
   color: var(--secomdary-text-color);
 }
 /* НАША КОМАНДА */
+.team {
+  background: #f5f4fa;
+}
+
 .team-name {
   font-weight: 500;
   font-size: 16px;
@@ -134,4 +140,31 @@ body {
 }
 .street {
   color: var(--text-dark-theme-color);
+}
+/* СТРАНИЦА ПОРТФОЛИО */
+.portfolio-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  color: var(--primary-text-color);
+}
+
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+  background-color: var(--accent);
+  color: var(--text-dark-theme-color);
+}
+
+.portfolo-subtitle {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--primary-text-color);
+}
+
+.portfolo-subtitle-type {
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--secomdary-text-color);
 }
