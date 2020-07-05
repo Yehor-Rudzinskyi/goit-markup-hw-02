@@ -1,36 +1,50 @@
 :root {
+  --main-font: 'Roboto', sans-serif;
   --primary-text-color: #212121;
   --secomdary-text-color: #757575;
   --accent: #2196f3;
-  --white: #fff;
+  --text-dark-theme-color: #fff;
   --secondary-background-color: #f5f4fa;
 }
 
 body {
-  background-color: #fff;
-  font-family: 'Roboto', sans-serif;
+  background-color: var(--white);
+  font-family: var(--main-font);
+  letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
 
-ul {
+.list {
   list-style: none;
 }
 
-a {
+.link {
   text-decoration: none;
 }
-/* Навигация */
+
+.main-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+
+.main-subtitle {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--text-dark-theme-color);
+}
+
+/* НАВИГАЦИЯ */
 .logo {
   font-family: Raleway;
-  font-style: normal;
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
-  /* identical to box height */
-
-  letter-spacing: 0.03em;
-
-  color: #000000;
+  color: #000;
 }
 
 .logo span {
@@ -43,13 +57,13 @@ a {
   line-height: 1.14;
   letter-spacing: 0.02em;
 
-  color: #212121;
+  color: var(--primary-text-color);
 }
 
 .navigation-list-link.studio {
   color: var(--accent);
 }
-/* Адресс навигации */
+/* АДРЕСС НАВИГАЦИИ */
 .address-header-link {
   font-weight: 500;
   font-size: 14px;
@@ -61,4 +75,63 @@ a {
 .address-header-link:hover,
 .address-header-link:focus {
   color: var(--accent);
+}
+/* ЗАГОЛОВОК */
+.main-heading {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  /* Временно для просмотра */
+  color: #731482;
+}
+
+.main-heading-order-button {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  background-color: var(--accent);
+  color: #fff;
+}
+/* О НАС */
+.about-us-subtitle {
+  color: var(--primary-text-color);
+}
+
+.about-us-description {
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--secomdary-text-color);
+}
+/* НАША КОМАНДА */
+.team-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  color: var(--primary-text-color);
+}
+
+.team-profession {
+  font-size: 16px;
+  line-height: 1.19;
+  color: var(--secomdary-text-color);
+}
+/* ПОДВАЛ */
+.footer {
+  background: #2f303a;
+}
+
+.footer-address-block > a {
+  color: var(--text-dark-theme-color);
+}
+
+.footer-address-list-item-link {
+  font-size: 14px;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+}
+.street {
+  color: var(--text-dark-theme-color);
 }
