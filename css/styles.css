@@ -55,9 +55,34 @@ address {
   font-style: normal;
 }
 
+ul {
+  padding: 0;
+  margin: 0;
+}
+
 /* НАВИГАЦИЯ */
 
+.header {
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  outline: 2px solid tomato;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-list {
+  display: flex;
+}
+
 .logo {
+  margin-right: 85px;
+
   color: #000;
 
   font-family: Raleway;
@@ -70,7 +95,15 @@ address {
   color: var(--accent);
 }
 
+.navigation-list-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .navigation-list-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--primary-text-color);
 
   font-weight: 500;
@@ -85,7 +118,22 @@ address {
 
 /* АДРЕСС НАВИГАЦИИ */
 
+.address-header {
+  margin-left: auto;
+}
+
+.address-header-list {
+  display: flex;
+}
+
+.adress-header-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .address-header-link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--secomdary-text-color);
 
   font-weight: 500;
